@@ -3,57 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema 4: Protección Medioambiental</title>
+    <title>Proyecto Ambiental - Tema 4</title>
     <style>
-        body { display: flex; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f9f9f9; }
-        /* Menú Lateral */
-        nav { width: 280px; background: #2c3e50; color: white; height: 100vh; padding: 20px; position: fixed; box-sizing: border-box; }
-        nav h2 { font-size: 1.2rem; border-bottom: 1px solid #555; padding-bottom: 10px; }
+        body { display: flex; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f0f2f5; height: 100vh; overflow: hidden; }
+        
+        /* Menú Lateral Fijo */
+        nav { width: 280px; background: #2c3e50; color: white; padding: 25px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); z-index: 10; }
+        nav h2 { color: #27ae60; font-size: 1.2rem; border-bottom: 1px solid #455a64; padding-bottom: 15px; }
         nav ul { list-style: none; padding: 0; }
         nav li { margin: 15px 0; }
-        nav a { color: #ecf0f1; text-decoration: none; font-size: 0.95rem; }
-        nav a:hover { color: #27ae60; }
-        /* Contenido Principal */
-        main { margin-left: 280px; padding: 40px; max-width: 800px; line-height: 1.6; }
-        h1 { color: #27ae60; border-bottom: 2px solid #27ae60; }
-        section { margin-bottom: 40px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { color: #ecf0f1; text-decoration: none; display: block; padding: 10px; border-radius: 5px; transition: 0.3s; cursor: pointer; }
+        nav a:hover { background: #34495e; color: #27ae60; padding-left: 15px; }
+
+        /* Contenedor de contenido */
+        main { flex-grow: 1; padding: 40px; overflow-y: auto; position: relative; }
+        
+        /* Ocultar secciones por defecto */
+        section { 
+            display: none; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* Mostrar la sección activa */
+        section:target, section.active { display: block; }
+
+        h1, h2 { color: #2c3e50; margin-top: 0; }
+        p { line-height: 1.7; color: #555; font-size: 1.1rem; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
+
     <nav>
-        <h2>Índice - Proyecto 1</h2>
+        <h2>Índice Proyecto</h2>
         <ul>
-            <li><a href="#inicio">Tema 4: Inicio</a></li>
-            <li><a href="#contaminacion">1. ¿Qué es la contaminación?</a></li>
-            <li><a href="#residuos">2. Residuos informáticos</a></li>
-            <li><a href="#obsolescencia">3. Obsolescencia programada</a></li>
-            <li><a href="#ecologica">4. Informática ecológica</a></li>
+            <li><a onclick="showSection('inicio')">🏠 Inicio</a></li>
+            <li><a onclick="showSection('contaminacion')">1. Contaminación</a></li>
+            <li><a onclick="showSection('residuos')">2. Residuos</a></li>
+            <li><a onclick="showSection('obsolescencia')">3. Obsolescencia</a></li>
+            <li><a onclick="showSection('ecologica')">4. Inf. Ecológica</a></li>
         </ul>
     </nav>
 
-    <main id="inicio">
-        <h1>Tema 4: Protección Medioambiental</h1>
-        <p>Trabajo colaborativo sobre el impacto de la tecnología en el medio ambiente.</p>
+    <main>
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio" class="active">
+            <h1>Tema 4: Protección Medioambiental</h1>
+            <p><strong>Lo que hemos realizado:</strong> En este proyecto colaborativo hemos diseñado un entorno digital para concienciar sobre el impacto tecnológico. Hemos investigado la cadena de vida de los productos electrónicos y sus consecuencias globales.</p>
+            <hr>
+            <p>Selecciona un apartado en el menú de la izquierda para comenzar la lectura.</p>
+        </section>
 
+        <!-- SECCIÓN 1 -->
         <section id="contaminacion">
             <h2>¿Qué es la contaminación ambiental?</h2>
-            <p>Escribe aquí la definición y tipos de contaminación...</p>
+            <p>La contaminación ambiental es la introducción de sustancias u otros elementos físicos en un medio, que provocan que este sea inseguro o no apto para su uso.</p>
+            <p>En el ámbito tecnológico, esto se traduce en emisiones de CO2 durante la fabricación y transporte de hardware.</p>
         </section>
 
+        <!-- SECCIÓN 2 -->
         <section id="residuos">
-            <h2>Residuos informáticos</h2>
-            <p>Explica qué pasa con el hardware viejo y la basura electrónica (e-waste)...</p>
+            <h2>Residuos informáticos (e-Waste)</h2>
+            <p>Se refiere a todos los dispositivos eléctricos o electrónicos que han sido desechados. Contienen materiales peligrosos como plomo, mercurio y cadmio.</p>
+            <p><strong>Dato clave:</strong> Solo el 20% de la basura electrónica mundial se recicla formalmente.</p>
         </section>
-        
+
+        <!-- SECCIÓN 3 -->
         <section id="obsolescencia">
             <h2>Obsolescencia programada</h2>
-            <p>Analiza por qué los dispositivos duran cada vez menos tiempo...</p>
+            <p>Es la planificación deliberada del fin de la vida útil de un producto por parte del fabricante.</p>
+            <p>Esto obliga al consumidor a comprar nuevos modelos con mayor frecuencia, generando un ciclo de consumo insostenible.</p>
         </section>
 
+                <!-- SECCIÓN 4 -->
         <section id="ecologica">
-            <h2>Informática ecológica</h2>
-            <p>Propuestas y soluciones para una informática más sostenible...</p>
+            <h2>4. Informática ecológica</h2>
+            
+            <!-- Imagen añadida -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://blog.idat.edu.pe" 
+                     alt="Informática Ecológica" 
+                     style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+
+            <p>La informática ecológica es el área de la informática que busca reducir el impacto ambiental de la tecnología.
+Se encarga de diseñar, usar y gestionar la tecnología de manera que cause el menor daño posible al medio ambiente.
+La informática ecológica surgió debido al rápido crecimiento de la tecnología y al descubrimiento del gran impacto ambiental que esta genera. Entre las principales causas que dañan el medio ambiente se encuentran el consumo masivo de electricidad debido a los grandes centros de datos distribuidos por todo el mundo, la extracción de minerales necesarios para fabricar dispositivos tecnológicos, la basura electrónica —ya que muchos dispositivos contienen materiales tóxicos que contaminan el suelo y el agua— y las emisiones de CO₂.
+La informática ecológica busca reducir estos problemas mediante un menor consumo de electricidad, el uso de energías renovables, la disminución de residuos electrónicos y el desarrollo de una tecnología más responsable y sostenible.
+Actualmente, la informática ecológica es utilizada por empresas, gobiernos y centros de investigación. Grandes compañías tecnológicas aplican medidas para reducir el consumo energético y utilizar energías renovables. Algunas de estas empresas son Google, Microsoft y Apple.
+En los últimos años se ha notado un mayor uso de energías renovables en centros de datos, así como el desarrollo de dispositivos con mayor eficiencia energética y programas de reciclaje electrónico.
+La informática ecológica es especialmente importante porque hoy en día casi todas las personas utilizan dispositivos tecnológicos. Si no se aplicaran medidas sostenibles, el impacto ambiental y la cantidad de residuos tóxicos seguirían aumentando. Por ello, el desarrollo de una tecnología sostenible es fundamental para proteger el medio ambiente.
+            </p>
+            
+            <hr>
+            <h3>🔗 Recursos y Referencias:</h3>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://www.ibm.com" target="_blank" 
+                   style="background: #0f62fe; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                   ¿Qué es la informática ecológica? | IBM
+                </a>
+                
+                <a href="https://es.wikipedia.org" target="_blank" 
+                   style="background: #e0e0e0; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; border: 1px solid #ccc;">
+                   Green computing - Wikipedia
+                </a>
+            </div>
         </section>
+
     </main>
+
+    <script>
+        // Función para cambiar de "página" sin recargar
+        function showSection(id) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('section');
+            sections.forEach(s => s.classList.remove('active'));
+            
+            // Mostrar la seleccionada
+            const target = document.getElementById(id);
+            target.classList.add('active');
+        }
+    </script>
+
 </body>
 </html>
+
