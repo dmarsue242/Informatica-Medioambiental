@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Ambiental - Tema 4</title>
+    <title>Inicio - Daniel Martinez Suero</title>
 <style>
     :root {
-        --primary: #00b894; /* Un verde más vibrante y moderno */
+        --primary: #00b894;
         --accent: #55efc4;
         --bg: #f0f3f7;
         --text: #2d3436;
@@ -53,7 +53,6 @@
         cursor: pointer;
     }
 
-    /* Efecto de línea que crece al pasar el ratón */
     nav a::after {
         content: '';
         display: block;
@@ -89,9 +88,8 @@
     }
     
     section { 
-        display: none; 
         background: var(--glass);
-        backdrop-filter: blur(10px); /* Efecto cristalino */
+        backdrop-filter: blur(10px);
         padding: 60px; 
         border-radius: 30px; 
         box-shadow: 0 20px 50px rgba(0,0,0,0.05);
@@ -103,11 +101,9 @@
         animation: reveal 0.8s ease;
     }
 
-    section.active { display: block; }
-
     /* ESTILO DE TEXTO */
-    h1 { font-size: 3rem; color: var(--text); margin-bottom: 20px; font-weight: 800; }
-    h2 { color: var(--primary); font-size: 2rem; margin-top: 0; }
+    h1 { font-size: 2.4rem; color: #2c3e50; margin: 0; font-weight: 800; }
+    h2 { color: var(--primary); font-size: 1.6rem; margin-top: 0; }
     p { line-height: 1.9; color: #4b4b4b; font-size: 1.1rem; }
 
     @keyframes reveal {
@@ -115,7 +111,6 @@
         to { opacity: 1; transform: scale(1) translateY(0); }
     }
 
-    /* Personalización del scroll interno de la tarjeta */
     section::-webkit-scrollbar { width: 6px; }
     section::-webkit-scrollbar-thumb { background: #dfe6e9; border-radius: 10px; }
 </style>
@@ -125,126 +120,51 @@
     <nav>
         <h2>Índice Proyecto</h2>
         <ul>
-            <li><a onclick="showSection('inicio')">🏠 Inicio</a></li>
-            <li><a onclick="showSection('contaminacion')">1. Contaminación</a></li>
-            <li><a onclick="showSection('residuos')">2. Residuos</a></li>
-            <li><a onclick="showSection('obsolescencia')">3. Obsolescencia</a></li>
-            <li><a onclick="showSection('ecologica')">4. Inf. Ecológica</a></li>
+            <li><a href="index.html" class="active-nav">🏠 Inicio</a></li>
+            <li><a href="contaminacion.html">01. Contaminación</a></li>
+            <li><a href="residuos.html">02. Residuos</a></li>
+            <li><a href="obsolescencia.html">03. Obsolescencia</a></li>
+            <li><a href="ecologica.html">04. Inf. Ecológica</a></li>
         </ul>
     </nav>
 
     <main>
-   <!-- SECCIÓN INICIO -->
-<section id="inicio" class="active">
-    <div style="border-bottom: 3px solid #27ae60; padding-bottom: 10px; margin-bottom: 30px;">
-        <h1 style="color: #2c3e50; font-size: 2.4rem; margin: 0;">Inicio - Daniel Martinez Suero</h1>
-        <p style="color: #7f8c8d; font-size: 1.1rem; margin-top: 5px;">Proyecto 1: Protección medioambiental (Tema 4)</p>
-    </div>
-
-    <div style="background: white; padding: 25px; border-radius: 12px; line-height: 1.8; color: #444;">
-        <h2 style="color: #27ae60; font-size: 1.6rem; margin-top: 0;">🌍 ¿De qué trata este proyecto?</h2>
-        
-        <p style="font-size: 1.1rem;">
-            Este trabajo de investigación tiene como objetivo principal analizar el <strong>impacto ambiental derivado de la era digital</strong>. A través de este proyecto colaborativo, exploramos cómo la tecnología, a pesar de sus beneficios, genera una huella ecológica significativa que debemos gestionar de forma responsable.
-        </p>
-
-        <p style="font-size: 1.1rem; margin-top: 20px;">
-            El contenido de este proyecto se divide en los cuatro pilares fundamentales solicitados:
-        </p>
-
-        <ul style="font-size: 1.05rem; color: #555; padding-left: 25px; margin-top: 15px;">
-            <li style="margin-bottom: 12px;">
-                <strong>Contaminación ambiental:</strong> Definición y causas generales del deterioro del entorno natural.
-            </li>
-            <li style="margin-bottom: 12px;">
-                <strong>Residuos informáticos:</strong> El grave problema de la basura electrónica (e-waste) y el vertido de metales pesados.
-            </li>
-            <li style="margin-bottom: 12px;">
-                <strong>Obsolescencia programada:</strong> El análisis del ciclo de vida corto de los dispositivos para fomentar el consumo.
-            </li>
-            <li style="margin-bottom: 12px;">
-                <strong>Informática ecológica:</strong> Soluciones y prácticas sostenibles para reducir el consumo energético y la contaminación.
-            </li>
-        </ul>
-    </div>
-</section>
-        <!-- SECCIÓN 1 -->
-        <section id="contaminacion">
-            <h2>¿Qué es la contaminación ambiental?</h2>
-            <p>La contaminación ambiental es la introducción de sustancias u otros elementos físicos en un medio, que provocan que este sea inseguro o no apto para su uso.</p>
-            <p>En el ámbito tecnológico, esto se traduce en emisiones de CO2 durante la fabricación y transporte de hardware.</p>
-        </section>
-
-        <!-- SECCIÓN 2 -->
-        <section id="residuos">
-            <h2>Residuos informáticos (e-Waste)</h2>
-            <p>Se refiere a todos los dispositivos eléctricos o electrónicos que han sido desechados. Contienen materiales peligrosos como plomo, mercurio y cadmio.</p>
-            <p><strong>Dato clave:</strong> Solo el 20% de la basura electrónica mundial se recicla formalmente.</p>
-        </section>
-
-        <!-- SECCIÓN 3 -->
-        <section id="obsolescencia">
-            <h2>3. Obsolescencia programada - José Manuel Pérez Berbel</h2>
-            <p>La obsolescencia programada es la estrategia empresarial de diseñar productos con una vida útil artificialmente limitada, logrando que fallen o queden obsoletos en un tiempo determinado.</p>
-            <p>Esto obliga a los consumidores a comprar nuevos productos o a reparar los actuales por un coste elevado, generando alto impacto ambiental y desperdicio.</p>
-        </section>
-
-                        <!-- SECCIÓN 4 -->
-        <section id="ecologica">
-            <h2>4. Informática ecológica - Daniel Martinez Suero</h2>
-        
-            <!-- Tu texto personalizado -->
-            <div style="background: #fdfdfd; padding: 15px; border-left: 5px solid #27ae60;">
-                <p>La informática ecológica es el área de la informática que busca reducir el impacto ambiental de la tecnología. Se encarga de diseñar, usar y gestionar la tecnología de manera que cause el menor daño posible al medio ambiente.</p>
-                
-                <p>Surgió debido al rápido crecimiento de la tecnología y al descubrimiento del gran impacto ambiental que esta genera. Entre las principales causas se encuentran el <strong>consumo masivo de electricidad</strong> en centros de datos, la <strong>extracción de minerales</strong>, la <strong>basura electrónica</strong> (con materiales tóxicos que contaminan suelo y agua) y las emisiones de <strong>CO₂</strong>.</p>
-                
-                <p>Busca reducir estos problemas mediante un menor consumo de electricidad, el uso de energías renovables y el desarrollo de una tecnología más responsable. Actualmente, es utilizada por empresas como <strong>Google, Microsoft y Apple</strong>, que aplican medidas para reducir el consumo energético.</p>
-                
-                <p>En los últimos años se ha notado un mayor uso de energías renovables y programas de reciclaje electrónico. Dado que casi todas las personas usan dispositivos hoy en día, el desarrollo de una tecnología sostenible es fundamental para proteger el medio ambiente.</p>
+        <section style="display: block;">
+            <div style="border-bottom: 3px solid #00b894; padding-bottom: 10px; margin-bottom: 30px;">
+                <h1>Inicio - Daniel Martinez Suero</h1>
+                <p style="color: #7f8c8d; font-size: 1.1rem; margin-top: 5px;">Proyecto 1: Protección medioambiental (Tema 4)</p>
             </div>
 
-             <!-- Imagen con estilo -->
-              <div style="text-align: center; margin-bottom: 25px;">
-        <!-- Carga tu imagen local subida a GitHub -->
-        <img src="verde.jpg" 
-             alt="Tecnología Sostenible" 
-             style="width: 100%; max-width: 650px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 1px solid #ddd;">
-        <p style="font-size: 0.85rem; color: #888; margin-top: 8px;">Representación de la tecnología verde y circuitos sostenibles.</p>
-    </div>
-
-            <hr style="margin: 30px 0; opacity: 0.3;">
-            
-            <h3>🔗 Recursos Externos Oficiales:</h3>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
-                <a href="https://www.ibm.com/es-es/think/topics/green-computing?" target="_blank" 
-                   style="background: #0f62fe; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: 0.3s;">
-                   ¿Qué es la informática ecológica? | IBM
-                </a>
+            <div style="background: white; padding: 25px; border-radius: 12px; line-height: 1.8; color: #444;">
+                <h2 style="color: #00b894; font-size: 1.6rem; margin-top: 0;">🌍 ¿De qué trata este proyecto?</h2>
                 
-                <a href="https://es.wikipedia.org/wiki/Green_computing" target="_blank" 
-                   style="background: #ffffff; color: #333; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem; border: 1px solid #333; transition: 0.3s;">
-                   Green computing - Wikipedia
-                </a>
+                <p style="font-size: 1.1rem;">
+                    Este trabajo de investigación tiene como objetivo principal analizar el <strong>impacto ambiental derivado de la era digital</strong>. A través de este proyecto colaborativo, exploramos cómo la tecnología, a pesar de sus beneficios, genera una huella ecológica significativa que debemos gestionar de forma responsable.
+                </p>
+
+                <p style="font-size: 1.1rem; margin-top: 20px;">
+                    El contenido de este proyecto se divide en los cuatro pilares fundamentales solicitados:
+                </p>
+
+                <ul style="font-size: 1.05rem; color: #555; padding-left: 25px; margin-top: 15px;">
+                    <li style="margin-bottom: 12px;">
+                        <strong>Contaminación ambiental:</strong> Definición y causas generales del deterioro del entorno natural.
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <strong>Residuos informáticos:</strong> El grave problema de la basura electrónica (e-waste) y el vertido de metales pesados.
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <strong>Obsolescencia programada:</strong> El análisis del ciclo de vida corto de los dispositivos para fomentar el consumo.
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <strong>Informática ecológica:</strong> Soluciones y prácticas sostenibles para reducir el consumo energético y la contaminación.
+                    </li>
+                </ul>
             </div>
         </section>
-
-
     </main>
-
-    <script>
-        // Función para cambiar de "página" sin recargar
-        function showSection(id) {
-            // Ocultar todas las secciones
-            const sections = document.querySelectorAll('section');
-            sections.forEach(s => s.classList.remove('active'));
-            
-            // Mostrar la seleccionada
-            const target = document.getElementById(id);
-            target.classList.add('active');
-        }
-    </script>
 
 </body>
 </html>
+
 
