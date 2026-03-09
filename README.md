@@ -16,7 +16,7 @@ La página aborda los siguientes puntos clave:
 Este proyecto ha sido desarrollado por:
 *   [Daniel Martinez Suero]
 *   [Daniel Mendoza Perez]
-*   [Josepe Perez]
+*   [Jose Manuel Pérez Berbel]
 
 ## 🛠️ Tecnologías utilizadas
 *   HTML5 / CSS3
