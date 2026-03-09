@@ -4,39 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Ambiental - Tema 4</title>
-    <style>
-        body { display: flex; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f0f2f5; height: 100vh; overflow: hidden; }
-        
-        /* Menú Lateral Fijo */
-        nav { width: 280px; background: #2c3e50; color: white; padding: 25px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); z-index: 10; }
-        nav h2 { color: #27ae60; font-size: 1.2rem; border-bottom: 1px solid #455a64; padding-bottom: 15px; }
-        nav ul { list-style: none; padding: 0; }
-        nav li { margin: 15px 0; }
-        nav a { color: #ecf0f1; text-decoration: none; display: block; padding: 10px; border-radius: 5px; transition: 0.3s; cursor: pointer; }
-        nav a:hover { background: #34495e; color: #27ae60; padding-left: 15px; }
+<style>
+    :root {
+        --primary: #27ae60;
+        --dark: #1a1c20;
+        --sidebar-bg: #2c3e50;
+        --hover-accent: rgba(39, 174, 96, 0.15);
+        --text-sidebar: #ced4da;
+    }
 
-        /* Contenedor de contenido */
-        main { flex-grow: 1; padding: 40px; overflow-y: auto; position: relative; }
-        
-        /* Ocultar secciones por defecto */
-        section { 
-            display: none; 
-            background: white; 
-            padding: 30px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            animation: fadeIn 0.5s ease;
-        }
+    body { 
+        display: flex; 
+        font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
+        margin: 0; 
+        background-color: #f8f9fa; 
+        height: 100vh; 
+        overflow: hidden; 
+    }
+    
+    /* MENÚ LATERAL REDISEÑADO */
+    nav { 
+        width: 300px; 
+        background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%); 
+        color: white; 
+        padding: 40px 20px; 
+        box-shadow: 4px 0 15px rgba(0,0,0,0.1); 
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
 
-        /* Mostrar la sección activa */
-        section:target, section.active { display: block; }
+    nav h2 { 
+        color: var(--primary); 
+        font-size: 0.8rem; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        margin-bottom: 40px;
+        padding-left: 10px;
+        opacity: 0.8;
+    }
 
-        h1, h2 { color: #2c3e50; margin-top: 0; }
-        p { line-height: 1.7; color: #555; font-size: 1.1rem; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+    nav ul { list-style: none; padding: 0; margin: 0; }
 
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    </style>
+    nav li { margin: 8px 0; }
+
+    nav a { 
+        color: var(--text-sidebar); 
+        text-decoration: none; 
+        display: flex; 
+        align-items: center;
+        padding: 14px 18px; 
+        border-radius: 10px; 
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1.05rem;
+    }
+
+    /* EFECTO DE SELECCIÓN Y HOVER */
+    nav a:hover { 
+        background: var(--hover-accent); 
+        color: var(--primary); 
+        transform: translateX(5px);
+    }
+
+    /* Clase para resaltar el botón activo (necesitas añadirla con JS) */
+    .nav-active {
+        background: rgba(255, 255, 255, 0.05) !important;
+        color: var(--primary) !important;
+        box-shadow: inset 4px 0 0 var(--primary);
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    main { 
+        flex-grow: 1; 
+        padding: 60px; 
+        overflow-y: auto; 
+        background: radial-gradient(circle at top right, #ffffff, #f1f3f5);
+    }
+    
+    section { 
+        display: none; 
+        background: white; 
+        padding: 50px; 
+        border-radius: 20px; 
+        box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+        max-width: 850px;
+        margin: 0 auto;
+        animation: slideUp 0.6s ease-out;
+    }
+
+    section.active { display: block; }
+
+    /* TIPOGRAFÍA DEL CONTENIDO */
+    h1 { color: #1a1c20; font-size: 2.8rem; margin-bottom: 20px; letter-spacing: -1px; }
+    h2 { color: var(--primary); font-size: 1.8rem; margin-top: 0; }
+    p { line-height: 1.8; color: #495057; font-size: 1.15rem; }
+    
+    hr { border: 0; border-top: 1px solid #f1f3f5; margin: 30px 0; }
+
+    /* ANIMACIONES */
+    @keyframes slideUp { 
+        from { opacity: 0; transform: translateY(30px); } 
+        to { opacity: 1; transform: translateY(0); } 
+    }
+</style>
 </head>
 <body>
 
