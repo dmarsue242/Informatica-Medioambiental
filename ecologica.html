@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informática Ecológica - Daniel Martinez Suero</title>
+<style>
+    :root {
+        --primary: #00b894;
+        --accent: #55efc4;
+        --bg: #f0f3f7;
+        --text: #2d3436;
+        --glass: rgba(255, 255, 255, 0.8);
+    }
+
+    body { 
+        display: flex; 
+        font-family: 'Poppins', 'Segoe UI', sans-serif; 
+        margin: 0; 
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        height: 100vh; 
+        overflow: hidden; 
+    }
+    
+    /* ÍNDICE FLOTANTE (Igual al Inicio) */
+    nav { 
+        width: 320px; 
+        padding: 40px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav h2 { 
+        font-size: 0.75rem; 
+        text-transform: uppercase; 
+        letter-spacing: 4px; 
+        color: #b2bec3; 
+        margin-bottom: 50px;
+    }
+
+    nav ul { list-style: none; padding: 0; }
+    nav li { margin: 25px 0; }
+
+    nav a { 
+        color: #636e72; 
+        text-decoration: none; 
+        font-size: 1.1rem; 
+        font-weight: 500;
+        transition: all 0.4s;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    nav a:hover, .active-nav { 
+        color: var(--primary) !important;
+        transform: scale(1.1);
+        font-weight: 700 !important;
+    }
+
+    /* CONTENEDOR DE CONTENIDO */
+    main { 
+        flex-grow: 1; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 50px;
+    }
+    
+    section { 
+        background: var(--glass);
+        backdrop-filter: blur(10px);
+        padding: 60px; 
+        border-radius: 30px; 
+        box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        border: 1px solid rgba(255,255,255,0.3);
+        max-width: 800px;
+        width: 100%;
+        height: 80vh;
+        overflow-y: auto;
+        animation: reveal 0.8s ease;
+    }
+
+    h2 { color: var(--primary); font-size: 2rem; margin-top: 0; }
+    p { line-height: 1.9; color: #4b4b4b; font-size: 1.1rem; text-align: justify; }
+    
+    /* Imagen al final */
+    .img-box { text-align: center; margin: 30px 0; }
+    .img-box img { width: 100%; max-width: 650px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 1px solid #ddd; }
+
+    @keyframes reveal {
+        from { opacity: 0; transform: scale(0.95) translateY(20px); }
+        to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    section::-webkit-scrollbar { width: 6px; }
+    section::-webkit-scrollbar-thumb { background: #dfe6e9; border-radius: 10px; }
+</style>
+</head>
+<body>
+
+    <nav>
+        <h2>Índice Proyecto</h2>
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="contaminacion.html">01. Contaminación</a></li>
+            <li><a href="residuos.html">02. Residuos</a></li>
+            <li><a href="obsolescencia.html">03. Obsolescencia</a></li>
+            <li><a href="ecologica.html" class="active-nav">04. Inf. Ecológica</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section style="display: block;">
+            <h2>4. Informática ecológica</h2>
+            
+            <p>La informática ecológica es el área de la informática que busca reducir el impacto ambiental de la tecnología. Se encarga de diseñar, usar y gestionar la tecnología de manera que cause el menor daño posible al medio ambiente.</p>
+            
+            <p>La informática ecológica surgió debido al rápido crecimiento de la tecnología y al descubrimiento del gran impacto ambiental que esta genera. Entre las principales causas que dañan el medio ambiente se encuentran el consumo masivo de electricidad debido a los grandes centros de datos distribuidos por todo el mundo, la extracción de minerales necesarios para fabricar dispositivos tecnológicos, la basura electrónica —ya que muchos dispositivos contienen materiales tóxicos que contaminan el suelo y el agua— y las emisiones de CO₂.</p>
+            
+            <p>La informática ecológica busca reducir estos problemas mediante un menor consumo de electricidad, el uso de energías renovables, la disminución de residuos electrónicos y el desarrollo de una tecnología más responsable y sostenible.</p>
+
+            <p>Actualmente, la informática ecológica es utilizada por empresas, gobiernos y centros de investigación. Grandes compañías tecnológicas aplican medidas para reducir el consumo energético y utilizar energías renovables. Algunas de estas empresas son Google, Microsoft y Apple.</p>
+
+            <p>En los últimos años se ha notado un mayor uso de energías renovables en centros de datos, así como el desarrollo de dispositivos con mayor eficiencia energética y programas de reciclaje electrónico.</p>
+
+            <p>La informática ecológica es especialmente importante porque hoy en día casi todas las personas utilizan dispositivos tecnológicos. Si no se aplicaran medidas sostenibles, el impacto ambiental y la cantidad de residuos tóxicos seguirían aumentando. Por ello, el desarrollo de una tecnología sostenible es fundamental para proteger el medio ambiente.</p>
+
+            <!-- Foto al final -->
+            <div class="img-box">
+                <img src="verde.jpg" alt="Informática Ecológica">
+                <p style="font-size: 0.85rem; color: #888; margin-top: 8px;">Representación de la tecnología verde y circuitos sostenibles.</p>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; gap: 15px;">
+                <a href="https://www.ibm.com" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 1px solid var(--primary); padding: 10px 15px; border-radius: 8px;">➜ IBM Green Computing</a>
+                <a href="https://es.wikipedia.org" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; border: 1px solid var(--primary); padding: 10px 15px; border-radius: 8px;">➜ Wikipedia</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
