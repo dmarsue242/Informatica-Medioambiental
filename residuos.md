@@ -1,3 +1,8 @@
+---
+layout: default
+title: Residuos Informáticos
+---
+
 # Residuos Informáticos
 
 Los residuos informáticos (o basura electrónica) son todos los aparatos tecnológicos que ya no usamos: ordenadores, móviles, tablets, impresoras, consolas, etc. Contienen metales pesados tóxicos (plomo, mercurio) que contaminan suelo, agua y aire si no se reciclan correctamente.
