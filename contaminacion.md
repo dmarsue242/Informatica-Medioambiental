@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contaminación y Residuos - Daniel Martinez Suero
+---
+
+
 # 🌱 Contaminación Ambiental y Residuos Informáticos
 
 <div style="background-color:#e0f7fa; padding:20px; border-radius:10px;">
