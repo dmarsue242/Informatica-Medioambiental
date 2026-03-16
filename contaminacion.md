@@ -1,57 +1,90 @@
-# <div align="center" style="background: linear-gradient(135deg, #004d40 0%, #00c853 100%); color: #ffffff; padding: 60px; border-radius: 20px; border: 4px solid #ffffff; font-family: 'Trebuchet MS';">EL DESAFÍO GLOBAL DE LA CONTAMINACIÓN<br><small style="color: #e0f2f1; font-size: 0.6em;">Análisis de Impacto Ambiental y Guía de Sostenibilidad</small></div>
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" width="100%" height="300px" style="object-fit: cover; border-radius: 15px;">
+  <h1>🌍 Crisis Ambiental: El Desafío de Nuestro Siglo</h1>
+  <p><i>"La tierra proporciona lo suficiente para satisfacer las necesidades de cada hombre, pero no la codicia de cada hombre." — Mahatma Gandhi</i></p>
+</div>
+
+<hr>
+
+## 📊 Tipos de Contaminación y su Impacto
+
+Usamos una tabla estilizada para organizar la información clave:
+
+<table>
+  <tr>
+    <th style="background-color: #2c3e50; color: white;">Tipo</th>
+    <th style="background-color: #2c3e50; color: white;">Causa Principal</th>
+    <th style="background-color: #2c3e50; color: white;">Efecto</th>
+  </tr>
+  <tr>
+    <td><b>Atmosférica</b></td>
+    <td>Emisiones industriales y autos</td>
+    <td>Calentamiento global y enfermedades respiratorias</td>
+  </tr>
+  <tr>
+    <td><b>Hídrica</b></td>
+    <td>Desechos plásticos y químicos</td>
+    <td>Destrucción de ecosistemas marinos</td>
+  </tr>
+  <tr>
+    <td><b>Del Suelo</b></td>
+    <td>Pesticidas y basura urbana</td>
+    <td>Pérdida de biodiversidad y suelos infértiles</td>
+  </tr>
+</table>
+
+<br>
+
+> [!IMPORTANT]
+> **Dato Crítico:** Se estima que para el año 2050 habrá más plástico que peces en el océano si no cambiamos nuestros hábitos de consumo.
 
 ---
 
-## <div style="background-color: #00acc1; color: white; padding: 15px; border-radius: 15px 15px 0 0; border: 2px solid #00acc1; margin-bottom: 0;">📦 01. NATURALEZA DEL PROBLEMA</div>
-<div style="background-color: #e0f7fa; color: #006064; padding: 30px; border-radius: 0 0 15px 15px; border: 2px solid #00acc1; font-size: 1.1em;">
+## 🛠️ Acciones para el Cambio
 
-La contaminación se define como la introducción de agentes físicos, químicos o biológicos en un medio al que no pertenecen, alterando su equilibrio natural. Esta degradación afecta principalmente tres pilares: **el aire que respiramos, el agua que consumimos y el suelo que nos sustenta.**
+Puedes usar bloques de colores (usando <code>&lt;blockquote&gt;</code>) para resaltar soluciones:
 
-**Factores de origen humano:**
-* **Emisiones industriales:** Vertidos de gases de efecto invernadero y químicos pesados.
-* **Actividad urbana:** Generación desmedida de residuos sólidos y falta de tratamiento de aguas.
-* **Agricultura intensiva:** Uso persistente de pesticidas que se filtran a los mantos acuíferos.
+<blockquote style="border-left: 5px solid #27ae60; background-color: #f1fcf4; padding: 10px;">
+  <h3 style="color: #27ae60;">🌱 Movimiento Verde</h3>
+  <ul>
+    <li><b>Reducir:</b> Optar por productos con menos empaque.</li>
+    <li><b>Reutilizar:</b> Darle una segunda vida a los objetos.</li>
+    <li><b>Reciclar:</b> Separar correctamente los residuos.</li>
+  </ul>
+</blockquote>
+
+<blockquote style="border-left: 5px solid #e74c3c; background-color: #fdf2f2; padding: 10px;">
+  <h3 style="color: #e74c3c;">⚠️ Lo que debemos evitar</h3>
+  <ul>
+    <li>Uso excesivo de plásticos de un solo uso.</li>
+    <li>Desperdicio de energía eléctrica y agua potable.</li>
+    <li>Quema de basura al aire libre.</li>
+  </ul>
+</blockquote>
+
+---
+
+## 📈 Estadísticas Globales
+
+Si quieres mostrar progreso o datos, las barras de progreso en HTML (simuladas) ayudan mucho:
+
+**Nivel de Co2 en la atmósfera (Crítico):**
+<div style="background-color: #e0e0e0; border-radius: 10px; width: 100%;">
+  <div style="background-color: #c0392b; color: white; padding: 5px; text-align: center; border-radius: 10px; width: 85%;">85% - Nivel de Riesgo</div>
 </div>
 
 <br>
 
-## <div style="background-color: #ffb300; color: #212121; padding: 15px; border-radius: 15px 15px 0 0; border: 2px solid #ffb300; margin-bottom: 0;">⚠️ 02. ANÁLISIS DE IMPACTO COTIDIANO</div>
-<div style="background-color: #fff8e1; color: #455a64; padding: 30px; border-radius: 0 0 15px 15px; border: 2px solid #ffb300;">
-
-A menudo ignoramos cómo nuestros hábitos diarios alimentan este ciclo destructivo. A continuación, se detallan las consecuencias directas de nuestras acciones:
-
-| Acción en el Día a Día | Consecuencia Ambiental Directa |
-| :--- | :--- |
-| **Desecho de colillas y envoltorios** | Contaminación de suelos y muerte de fauna por ingestión accidental. |
-| **Uso de plásticos de un solo uso** | Fragmentación en microplásticos que ingresan en nuestra cadena alimentaria. |
-| **Uso de transporte privado (fósil)** | Aumento de partículas PM2.5 que provocan crisis respiratorias crónicas. |
-| **Vertido de aceites y químicos** | Obstrucción de depuradoras y eutrofización de ríos y mares. |
-| **Consumo de ultraprocesados** | Exceso de embalajes y alta huella de carbono por transporte logístico. |
-
+**Transición a Energías Renovables (En progreso):**
+<div style="background-color: #e0e0e0; border-radius: 10px; width: 100%;">
+  <div style="background-color: #27ae60; color: white; padding: 5px; text-align: center; border-radius: 10px; width: 30%;">30% - Meta 2030</div>
 </div>
 
-<br>
+---
 
-## <div style="background-color: #43a047; color: white; padding: 15px; border-radius: 15px 15px 0 0; border: 2px solid #43a047; margin-bottom: 0;">💡 03. HOJA DE RUTA PARA LA MITIGACIÓN</div>
-<div style="background-color: #e8f5e9; color: #1b5e20; padding: 30px; border-radius: 0 0 15px 15px; border: 2px solid #43a047;">
-
-Para revertir el daño, es necesario adoptar un enfoque de **responsabilidad compartida**. Aquí se presentan las soluciones clave:
-
-1.  **Gestión Inteligente de Residuos:** No se trata solo de reciclar, sino de rechazar materiales no biodegradables y clasificar correctamente en origen (orgánico, envases, papel, vidrio).
-2.  **Movilidad Eficiente:** Priorizar trayectos a pie o en bicicleta para distancias cortas, y el uso de transporte público o vehículos compartidos para trayectos largos.
-3.  **Optimización de Recursos Vitales:** Implementar sistemas de ahorro de agua en el hogar (duchas cortas, grifos con aireadores) y reducir el desperdicio energético.
-4.  **Consumo de Proximidad:** Elegir productos locales y de temporada reduce drásticamente las emisiones derivadas del transporte internacional.
-</div>
-
-<br>
-
-## <div style="background-color: #263238; color: #81c784; padding: 40px; border-radius: 20px; border-left: 15px solid #81c784; text-align: justify;">
-<strong>SÍNTESIS FINAL:</strong><br><br>
-La contaminación no es un evento aislado gestionado por gobiernos y fábricas; es el resultado acumulativo de nuestras decisiones individuales. Cada pequeña acción cuenta: una botella menos, un grifo cerrado a tiempo o un trayecto a pie marcan la diferencia entre un entorno degradado y un futuro sostenible. Cuidar el planeta es, fundamentalmente, asegurar nuestra propia supervivencia y la de las personas que queremos.
-</div>
-
-<div align="center" style="margin-top: 20px;">
-<img src="https://img.shields.io/badge/Prioridad-Alta-red?style=for-the-badge" /> 
-<img src="https://img.shields.io/badge/Objetivo-Emisiones_Cero-green?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Año-2026-blue?style=for-the-badge" />
+<div align="center">
+  <h3>¿Quieres contribuir?</h3>
+  <a href="https://www.un.org/es/climatechange">
+    <img src="https://img.shields.io/badge/Más_Información-ONU-blue?style=for-the-badge&logo=un" alt="ONU">
+  </a>
 </div>
