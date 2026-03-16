@@ -1,51 +1,52 @@
-# 🌍 Contaminación Ambiental
+# <div align="center" style="background: #27ae60; color: white; padding: 35px; border-radius: 15px; border: 5px solid #1e8449; font-family: sans-serif;">CONTAMINACIÓN AMBIENTAL</div>
 
-> 💡 La contaminación ambiental es cuando el aire, el agua o el suelo se ensucian o se dañan por sustancias o actividades humanas.  
-> Esto perjudica la salud de personas, animales y plantas, y afecta al equilibrio de la naturaleza.  
-> Ocurre cuando liberamos residuos, gases o productos químicos que la naturaleza no puede limpiar por sí sola.
+<br>
 
----
+## <div style="background-color: #2980b9; color: white; padding: 12px; border-radius: 8px 8px 0 0; font-family: sans-serif;">CONCEPTO FUNDAMENTAL</div>
+<div style="background-color: #e3f2fd; padding: 20px; border: 2px solid #2980b9; border-radius: 0 0 8px 8px; color: #154360;">
 
-## 🌬️ Tipos de contaminación ambiental
+La contaminación es la alteración nociva del estado natural del medio ambiente por agentes externos. Esta presencia de sustancias o residuos en el aire, el agua o el suelo compromete la estabilidad de los ecosistemas y la salud humana.
 
-🔹 **Contaminación del aire**  
-Gases y partículas de coches, fábricas o quemas de basura. Puede causar problemas respiratorios, alergias y contribuir al cambio climático.
-
-🔹 **Contaminación del agua**  
-Basura, plásticos, petróleo o químicos en ríos, lagos y mares. Daña peces, plantas acuáticas y el agua que usamos para beber o regar cultivos.
-
-🔹 **Contaminación del suelo**  
-Acumulación de basura, metales pesados o pesticidas en la tierra. Afecta cultivos, animales y puede llegar a las personas a través de los alimentos.
-
-🔹 **Contaminación acústica**  
-Exceso de ruido de tráfico, obras o aviones, causando estrés y falta de sueño.
-
-🔹 **Contaminación lumínica**  
-Exceso de luz artificial por la noche, afectando el descanso de personas y animales.
+**Principales detonantes:**
+* Procesos industriales sin control de emisiones.
+* Gestión ineficiente de desechos sólidos.
+* Uso de químicos persistentes en la agricultura.
+</div>
 
 ---
 
-## ⚠️ Causas principales
+## <div style="background-color: #f1c40f; color: black; padding: 12px; border-radius: 8px 8px 0 0; font-family: sans-serif;">ALERTA: IMPACTOS COTIDIANOS</div>
+<div style="background-color: #fff9c4; padding: 20px; border: 2px solid #f1c40f; border-radius: 0 0 8px 8px; color: #7f6000;">
 
-- ⛽ Uso de combustibles fósiles (petróleo, gasolina, carbón) en coches, fábricas y centrales eléctricas.  
-- 🧴 Uso excesivo de plásticos, pesticidas y químicos que terminan en agua o tierra.  
-- 🌳 Tala de bosques, incendios y cambios de uso del suelo para agricultura o construcción.  
-- 🗑️ Mala gestión de la basura: tirar residuos en la calle, ríos o vertederos ilegales, en lugar de reciclarlos.
+| Actividad Crítica | Consecuencia Ambiental |
+| :--- | :--- |
+| **Residuos Plásticos** | Degradación en microplásticos que contaminan el agua potable. |
+| **Combustión Vehicular** | Emisión de gases que degradan la calidad del aire respirable. |
+| **Desechos Químicos** | Contaminación irreversible de mantos acuíferos y suelos. |
+| **Gasto Hídrico** | Agotamiento acelerado de las reservas de agua dulce. |
 
----
-
-## 🚨 Consecuencias
-
-> 🏥 La contaminación ambiental puede provocar enfermedades respiratorias, alergias, problemas del corazón y otros daños a la salud.  
-> 🌱 También afecta animales y plantas, provocando pérdida de biodiversidad y destrucción de hábitats.  
-> 🌡️ Además, contribuye al cambio climático, al calentamiento global y a fenómenos como inundaciones, sequías o lluvia ácida.
+</div>
 
 ---
 
-## 🌱 Mensaje final
+## <div style="background-color: #2ecc71; color: white; padding: 12px; border-radius: 8px 8px 0 0; font-family: sans-serif;">ESTRATEGIAS DE SOLUCIÓN</div>
+<div style="background-color: #e8f5e9; padding: 20px; border: 2px solid #2ecc71; border-radius: 0 0 8px 8px; color: #1b5e20;">
 
-**💚 Cuidar el medio ambiente es responsabilidad de todos.**  
-Cada acción cuenta: desde reciclar hasta reducir el uso de combustibles fósiles y plásticos.
+### Acciones para el cambio inmediato:
+
+1. **Gestión de Residuos:** Clasificación estricta y eliminación de plásticos de un solo uso.
+2. **Movilidad Sostenible:** Priorización de transporte público, bicicleta o rutas a pie.
+3. **Eficiencia Energética:** Reducción del consumo eléctrico y optimización del uso del agua.
+4. **Consumo Responsable:** Elección de productos de proximidad y minimización de envases.
+</div>
 
 ---
 
+## <div style="background-color: #e67e22; color: white; padding: 25px; border-radius: 15px; text-align: center; font-family: sans-serif;">REFLEXIÓN FINAL</div>
+
+<div style="color: #ffffff; background-color: #d35400; padding: 20px; border-radius: 10px;">
+La contaminación comienza en las decisiones individuales. Cada botella menos, cada trayecto a pie y cada grifo cerrado a tiempo constituye un avance real hacia la recuperación del entorno. Cuidar el planeta es asegurar el futuro de las próximas generaciones.
+</div>
+
+
+</div>
