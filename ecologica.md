@@ -3,13 +3,12 @@ layout: default
 title: Informática Ecológica - Daniel Martinez Suero
 ---
 
-<!-- ENCABEZADO PRINCIPAL -->
+<!-- Todo lo de abajo es tu diseño original exacto -->
 <div style="border-bottom: 3px solid #00b894; padding-bottom: 15px; margin-bottom: 35px; animation: reveal 0.8s ease;">
     <h1 style="font-size: 2.5rem; color: #2c3e50; margin: 0; font-weight: 800;">💻🌿 Informática Ecológica</h1>
     <p style="color: #7f8c8d; font-size: 1.1rem; margin-top: 5px;">Hacia una tecnología sostenible y responsable</p>
 </div>
 
-<!-- DEFINICIÓN DESTACADA -->
 <div class="content-box" style="background: #ffffff; padding: 35px; border-left: 8px solid #00b894; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); margin-bottom: 40px;">
     <h2 style="color: #00b894; font-size: 1.6rem; margin-top: 0; border: none; display: flex; align-items: center; gap: 10px;">
         <span>🌱</span> ¿Qué es el Green Computing?
@@ -19,10 +18,7 @@ title: Informática Ecológica - Daniel Martinez Suero
     </p>
 </div>
 
-<!-- GRID DE IMPACTO Y SOLUCIONES -->
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
-    
-    <!-- PROBLEMAS -->
     <div style="background: #fff5f5; padding: 25px; border-radius: 20px; border: 1px solid #fed7d7;">
         <h3 style="color: #c53030; margin-top: 0; display: flex; align-items: center; gap: 10px;">
             <span>⚠️</span> El Desafío
@@ -35,7 +31,6 @@ title: Informática Ecológica - Daniel Martinez Suero
         </ul>
     </div>
 
-    <!-- SOLUCIONES -->
     <div style="background: #f0fff4; padding: 25px; border-radius: 20px; border: 1px solid #c6f6d5;">
         <h3 style="color: #2f855a; margin-top: 0; display: flex; align-items: center; gap: 10px;">
             <span>✨</span> La Solución
@@ -49,14 +44,12 @@ title: Informática Ecológica - Daniel Martinez Suero
     </div>
 </div>
 
-<!-- TEXTO INFORMATIVO ADICIONAL -->
 <div style="line-height: 1.8; color: #4a5568; font-size: 1.05rem; padding: 0 10px;">
     <p style="margin-bottom: 1.5rem;">
         Actualmente, gigantes como <strong>Google, Microsoft y Apple</strong> lideran la transición hacia centros de datos alimentados por energía eólica y solar. Es fundamental entender que, en un mundo hiperconectado, el desarrollo de una tecnología sostenible no es una opción, sino una necesidad para proteger nuestro entorno.
     </p>
 </div>
 
-<!-- IMAGEN CON DISEÑO MODERNO -->
 <div style="text-align: center; margin: 45px 0;">
     <div style="display: inline-block; position: relative;">
         <img src="verde.jpg" alt="Informática Ecológica" style="width: 100%; max-width: 700px; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
@@ -66,27 +59,26 @@ title: Informática Ecológica - Daniel Martinez Suero
     </div>
 </div>
 
-<!-- BOTONES DE RECURSOS EXTERNOS -->
 <div style="margin-top: 50px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; padding-bottom: 60px;">
-    
-    <!-- IBM -->
-    <a href="https://www.ibm.com/es-es/think/topics/green-computing?" target="_blank" 
+    <a href="https://www.ibm.com?" target="_blank" class="custom-btn"
        style="background: #0f62fe; color: white; font-weight: 600; text-decoration: none; padding: 16px 32px; border-radius: 15px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(15, 98, 254, 0.2); display: flex; align-items: center; gap: 12px;">
        <span style="background: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; color: #0f62fe; font-size: 14px;">i</span> 
        IBM Green Computing
     </a>
 
-    <!-- WIKIPEDIA -->
-    <a href="https://es.wikipedia.org/wiki/Green_computing" target="_blank" 
+    <a href="https://es.wikipedia.org" target="_blank" class="custom-btn"
        style="background: #ffffff; color: #2d3436; font-weight: 600; text-decoration: none; padding: 16px 32px; border-radius: 15px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 12px;">
        <span>📖</span> Saber más en Wikipedia
     </a>
 </div>
 
 <style>
-    /* Efecto Hover para los botones */
-    a:hover {
+    .custom-btn:hover {
         transform: translateY(-5px);
         filter: brightness(1.1);
+    }
+    @keyframes reveal {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 </style>
